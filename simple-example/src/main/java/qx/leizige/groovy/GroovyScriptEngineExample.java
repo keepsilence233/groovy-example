@@ -20,6 +20,7 @@ public class GroovyScriptEngineExample {
         GroovyScriptEngine gse = new GroovyScriptEngine("simple-example/src/main/resources/");
         Binding binding = new Binding();
         binding.setVariable("body","param body ......");
-        gse.run("script_test.groovy",binding);
+        Object result = gse.run("script_test.groovy", binding);
+        System.out.println("result = " + result);
     }
 }
