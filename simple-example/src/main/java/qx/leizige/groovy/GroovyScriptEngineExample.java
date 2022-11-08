@@ -18,6 +18,8 @@ public class GroovyScriptEngineExample {
 
     public static void main(String[] args) throws IOException, ScriptException, ResourceException {
         GroovyScriptEngine gse = new GroovyScriptEngine("simple-example/src/main/resources/");
-        gse.run("script_test.groovy", new Binding());
+        Binding binding = new Binding();
+        binding.setVariable("body","param body ......");
+        gse.run("script_test.groovy",binding);
     }
 }

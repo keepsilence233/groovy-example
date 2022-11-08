@@ -1,11 +1,13 @@
-class script_test {
+String matchAddress(String body) {
 
-    static void main(String[] args) {
-        def add = add(10, 20)
-        print(add)
-    }
-
-    static def add(def y, def x) {
-        return y + x
-    }
+    println body;
 }
+
+matchAddress(body)
+
+void print(){
+    System.out.println("没有参数!!!!");
+}
+
+//执行方法
+print();
