@@ -18,6 +18,7 @@ class Student {
 
     void setAge(Integer age) {
         this.age = age
+//        throw new RuntimeException("setAge exception ...")
     }
 
 

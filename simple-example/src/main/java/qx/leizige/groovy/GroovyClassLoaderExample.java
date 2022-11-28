@@ -22,8 +22,13 @@ public class GroovyClassLoaderExample {
 
         GroovyObject groovyObject = (GroovyObject) clazz.newInstance();
 
-        groovyObject.invokeMethod("setName", "张三");
-        groovyObject.invokeMethod("setAge", 20);
+        try {
+            groovyObject.invokeMethod("setName", "张三");
+            groovyObject.invokeMethod("setAge", 20);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            e.printStackTrace();
+        }
 
         System.err.println(groovyObject.invokeMethod("toString", null));
 
