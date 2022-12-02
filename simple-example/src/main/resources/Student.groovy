@@ -21,6 +21,12 @@ class Student {
 //        throw new RuntimeException("setAge exception ...")
     }
 
+    public Student createStu(String name,Integer age){
+        Student student = new Student();
+         student.setName(name)
+         student.setAge(age)
+         return student;
+    }
 
     @Override
     public String toString() {

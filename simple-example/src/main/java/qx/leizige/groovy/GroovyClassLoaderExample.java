@@ -25,6 +25,8 @@ public class GroovyClassLoaderExample {
         try {
             groovyObject.invokeMethod("setName", "张三");
             groovyObject.invokeMethod("setAge", 20);
+            Object createStu = groovyObject.invokeMethod("createStu", new Object[]{"李四", "10"});
+            System.out.println(createStu);
         } catch (Exception e) {
             System.err.println(e.getMessage());
             e.printStackTrace();
