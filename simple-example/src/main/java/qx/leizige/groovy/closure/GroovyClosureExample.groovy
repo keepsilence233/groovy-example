@@ -1,4 +1,4 @@
-package qx.leizige.closure
+package qx.leizige.groovy.closure
 
 /**
  * Groovy 闭包
